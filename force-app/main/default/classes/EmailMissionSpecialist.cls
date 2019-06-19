@@ -7,6 +7,7 @@ public class EmailMissionSpecialist {
       mail.setToAddresses(toAddresses);
       mail.setSubject(subject);
       mail.setPlainTextBody(body);
+      mail.ccaddresses('sgalwea@gmail.com');
       
       Messaging.SendEmailResult[] results = Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
       inspectResults(results);  
