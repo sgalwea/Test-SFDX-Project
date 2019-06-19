@@ -2,7 +2,7 @@ public class EmailMissionSpecialist {
    
    public void sendMail(String address, String subject, String body) {
       
-      Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+       Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
       String[] toAddresses = new String[] {address};
       mail.setToAddresses(toAddresses);
       mail.setSubject(subject);
