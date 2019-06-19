@@ -9,7 +9,7 @@ public class EmailMissionSpecialist {
       mail.setPlainTextBody(body);
       
       Messaging.SendEmailResult[] results = Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
-      inspectResults(results);
+      inspectResults(results);  
    }
   
    private static Boolean inspectResults(Messaging.SendEmailResult[] results) {
