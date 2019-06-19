@@ -10,7 +10,6 @@ public class EmailMissionSpecialist {
       
       Messaging.SendEmailResult[] results = Messaging.sendEmail(
                                 new Messaging.SingleEmailMessage[] { mail });
-      
       inspectResults(results);
    }
   
